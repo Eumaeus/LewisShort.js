@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lewis & Short Dictionary  (LewisShort.js v.1.0.0)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="styles/application.css">
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i&amp;subset=cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
+
+	<script src="scripts/jquery-3.7.1.min"></script>
+	<script type="text/javascript" src="scripts/marked.min.js"></script>
+	<script src="scripts/betareader.js"></script>
+
+</head>
+<body id="body">
+
+	<div id="main-wrapper">
+
+	<header>
+			<em>A Latin Dictionary.</em> Founded on Andrews’ edition of Freund's Latin dictionary, revised, enlarged, and in great part rewritten by Charlton T. Lewis, Ph.D., and Charles Short, LL.D. (Oxford: Clarendon Press, 1879) <span id="app_header_versionInfo">CITE Version 1.4.0</span> 
+			<div id="main_message" class="app_message wait"> <!-- app_hidden -->
+
+			<p>Loading data…</p>
+			</div>
+		</header>
+
+		<article id="main_Container">
+
+			<p id="menu"> <a href="http://cite-architecture.github.io">The CITE Architecture</a> | <a
+			href="https://github.com/Eumaeus/LewisShort.js">About this project</a> | <a
+			href="http://folio2.furman.edu/lewis-short/index.html">The LSJ Greek Lexicon</a> | <a
+			href="data/lexicon.cex" target="_blank">Lexicon Raw Data</a> | <a
+			href="help.html" target="_blank">Help with Searching</a>
+			</p>
+
+			<ul id="alphaList">
+				<li id="alpha_a" data-lookup="a" class="selected">Aa</li>
+				<li id="alpha_b" data-lookup="b">Bb</li>
+				<li id="alpha_c" data-lookup="c">Cc</li>
+				<li id="alpha_d" data-lookup="d">Dd</li>
+				<li id="alpha_e" data-lookup="e">Ee</li>
+				<li id="alpha_f" data-lookup="f">Ff</li>
+				<li id="alpha_g" data-lookup="g">Gg</li>
+				<li id="alpha_h" data-lookup="h">Hh</li>
+				<li id="alpha_i" data-lookup="i">Ii</li>
+				<li id="alpha_j" data-lookup="j">Jj</li>
+				<li id="alpha_k" data-lookup="k">Kk</li>
+				<li id="alpha_l" data-lookup="l">Ll</li>
+				<li id="alpha_m" data-lookup="m">Mm</li>
+				<li id="alpha_n" data-lookup="n">Nn</li>
+				<li id="alpha_o" data-lookup="o">Oo</li>
+				<li id="alpha_p" data-lookup="p">Pp</li>
+				<li id="alpha_q" data-lookup="q">Qq</li>
+				<li id="alpha_r" data-lookup="r">Rr</li>
+				<li id="alpha_s" data-lookup="s">Ss</li>
+				<li id="alpha_t" data-lookup="t">Tt</li>
+				<li id="alpha_u" data-lookup="u">Uu</li>
+				<li id="alpha_v" data-lookup="v">Vv</li>
+				<li id="alpha_x" data-lookup="x">Xx</li>
+				<li id="alpha_y" data-lookup="y">Yy</li>
+				<li id="alpha_z" data-lookup="z">Zz</li>
+			</ul>
+			<ul id="volumeList" class="long">
+				<!--
+				<li id="entry_n0">Α α</li>
+				<li id="entry_n1">ἀ-</li>
+				<li id="entry_n2">ἀ-</li> -->
+			</ul> <!-- id="volumeList" -->
+
+			<div id="lexiconDiv">
+
+				<div id="unknownDiv"> <!-- remove? -->
+
+					<div id="searchDiv">
+						<label class="inputLabel" for="greekInput">Search Latin:</label>
+						<input class="greekInputField" id="greekInput" size="40" spellcheck="false">
+					</div> <!-- id="searchDiv" -->
+
+					<div id="searchEnglishDiv">
+						<label class="inputLabel" for="englishInput">Search All Text: </label>
+						<input class="greekInputField" id="englishInput" size="30">
+						<button id="searchButton">Search All Text</button>
+					</div> <!-- id="searchEnglishDiv" -->
+
+				</div> <!-- id="unknownDiv" remove? -->
+
+				<ul id="resultsList">
+					<!--
+					<li id="lexResultListItem_n8909" class="lexResultListItem selected">
+						ἄνθρωπος
+					</li>
+					<li id="lexResultListItem_n8910" class="">
+						ἀνθρωποσφᾰγέω
+					</li>
+					<li id="lexResultListItem_n845" class="">
+						ἀγρι-άνθρωπος
+					</li>
+					-->
+				</ul>
+
+				<div id="entryDiv" class="greekFont">
+
+					<div id="lexEntryDiv" class="lexEntryDiv">
+
+
+						<p id="lexEntryUrnP" class="lexEntryUrnP">
+							<span class="lexEntryUrn" id="lexEntryUrn">
+								<a href=""></a>
+							</span>
+						</p>
+
+						<p id="lexEntryLabel" class="lexEntryLabel"></p>
+
+						<p class="lexEntry" id="lexEntry"></p>
+
+					</div> <!-- id="lexEntryContainerDiv_urn:cite2…" -->
+
+				</div> <!-- id="entryDiv" -->
+
+			</div> <!-- id="lexiconDiv" -->
+
+			<textarea id="hiddenTextArea"></textarea>
+
+
+		</article>
+
+		<div class="push"></div>
+		<div class="small-print">
+			<p> <em>A Latin Dictionary.</em> Founded on Andrews’ edition of Freund's Latin dictionary, revised, enlarged, and in great part rewritten by Charlton T. Lewis, Ph.D., and Charles Short, LL.D. (Oxford: Clarendon Press, 1879) Text provided by Perseus Digital Library, with funding from The National Endowment for the Humanities. Original version available for viewing and download at <a href="http://www.perseus.tufts.edu/">http://www.perseus.tufts.edu/</a>. This application is ©2025, Christopher W. Blackwell, licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL 3.0</a>. CITE/CTS is ©2002–2025 Neel Smith and Christopher Blackwell. Licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL 3.0</a>. The dictionary data is <a href="https://github.com/Eumaeus/cex_lewis_and_short">is on Github</a>. Sourcecode on <a href="https://github.com/Eumaeus/Lewis_and_Short.jl">GitHub</a>. Report bugs by <a href="https://github.com/Eumaeus/Lewis_and_Short.jl/issues">filing issues on GitHub.</a>
+		</p>
+		</div> <!-- small print -->
+
+
+	</div> <!-- id="main-wrapper" -->
+
+
+
+<footer>
+	<img src="styles/fu.svg" height="50px"/>
+	<p>
+		<span class="fu_motto">Editions, done right, for learners.</span>
+		<span class="cc_license"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC</a></span>
+		<a href="https://github.com/Furman-University-Editions"><img alt="github" class="github_logo" height="30px" src="styles/GitHub-Mark-Light-120px-plus.png"/></a>
+	</p>
+	
+</footer>
+
+</body>
+
+<script type="text/javascript" language="javascript">
+
+		// global variables
+		const indexFileName = "data/index.txt";
+		const lexFileName = "data/lexicon.txt";
+		// request-params
+		let urlParams = new URL(document.location.toString()).searchParams;
+    	let urnRequestParam = urlParams.get("urn");
+		// Big Data
+		var indexData = [];
+		var lexData = [];
+		// Current Data
+		//var currentLexVolume = [];
+		//var currentUrn = "";
+		//var currentEntryChoices = [];
+		var currentEntry = undefined;
+
+
+        $(document).ready(function () {
+
+		    // bootstrap.js begins the chain of asynch data-loading before user-interaction can happen.
+
+            $.getScript("scripts/bootstrap.js", function () {
+                console.log("bootstrap loaded…");
+            });
+        });  
+        let debugBR = new betareader();
+    </script>
+
+</html>
