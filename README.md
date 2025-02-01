@@ -1,6 +1,6 @@
 # LewisShort.js
 
-![version 1.0.0](https://img.shields.io/badge/LewisShort.js-1.0.0-orange)
+![version 1.0.1](https://img.shields.io/badge/LewisShort.js-1.0.1-orange)
 
 A Javascript-only implementation of the *Lewis & Short Latin Dictionary*.
 
