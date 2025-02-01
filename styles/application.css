@@ -230,6 +230,12 @@ span.lexEntryUrn:hover:before {
 	color: white;
 }
 
+p#entryStats {
+	color: #444;
+	margin-bottom: 0;
+	font: 12px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 
 span.lexEntryUrn a {
 	color: rgb(117, 1, 1);

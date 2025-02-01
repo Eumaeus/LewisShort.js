@@ -242,7 +242,8 @@ function displayEntry( urn ) {
 			// Update URN links
 			$("#lexEntryUrn a").html(thisEntry.urn);
 			$("#lexEntryUrn a").attr("href", "?urn=" + thisEntry.urn);
-			
+			$("p#entryStats").html(`${urn}. Entry ${numberWithCommas(thisEntry.seq)} of ${numberWithCommas(lexData.length)}.`)
+	
 }
 
 function entryFromUrn( urn ) {
